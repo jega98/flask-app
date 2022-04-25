@@ -17,6 +17,19 @@ def hello_name(name):
 def addition(num1 , num2):
    return str(int(num1) + int(num2))
 
+@app.route('/sub/<num1>/<num2>')
+def subraction(num1 , num2):
+   return str(int(num1) - int(num2))
+
+@app.route('/multi/<num1>/<num2>')
+def multiplication(num1 , num2):
+   return str(int(num1) * int(num2))
+@app.route('/div/<num1>/<num2>')
+def divistion(num1 , num2):
+   return str(int(num1) / int(num2))
+
+
+
 if __name__ == '__main__':
    app.run()
    
